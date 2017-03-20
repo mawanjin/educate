@@ -1,0 +1,61 @@
+<div class="navbar navbar-app navbar-absolute-top edu_title">
+    <div class="navbar-brand navbar-brand-center" style="width:100%;text-align:center;">
+        <!--{{schoolName}}-->
+        我的学校
+    </div>
+    <!--<div style="position:absolute;height:100%;" ng-click="back()">-->
+    <div style="position:absolute;height:100%;" >
+        <table height=100%>
+            <tr>
+                <td style="color:white;padding-left: 20px;" >
+                    <img src="imgs/back.png" class="back_arrow" onclick="javascript:window.history.go(-1);" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="scrollable">
+
+    <div class="scrollable-content">
+        <div><img src="imgs/logo_schoolNew.jpg" width="100%"  /></div>
+
+        <div class="list-group">
+            <a ng-repeat="schoolNews in schoolNewses" href="#/detail/{{ schoolNews.id }}" class="list-group-item">
+
+				<table height=100%>
+                    <tr>
+                        <td width="90px" height="70px"><img src="{{ schoolNews.img }}" width="90px" height="70px"/></td>
+                        <td width="15px;"></td>
+                        <!--<td><img src="imgs/myschool_default_icon.png" width="80px" height="80px"/></td>-->
+                        <td>
+                            <table border=0 height=100%>
+                                <tr>
+                                    <!--标题-->
+                                    <td style="color: #333;font-size: 17px;"> {{schoolNews.title }}</td>
+                                </tr>
+
+                                <tr>
+                                    <td height=5px></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color: #999;">{{schoolNews.summary }}</td>
+                                </tr>
+                                <tr>
+                                    <td height="100%" valign=bottom style="color: #999;">{{schoolNews.createDate | date:'yyyy-MM-dd
+                                        HH:mm:ss'}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+            </a>
+        </div>
+    </div>
+
+
+</div>
+
+	

@@ -1,0 +1,29 @@
+<div class="app" style="background-color:white;">
+    <!--标题-->
+    <div class="edu_title">
+        关于我们
+    </div>
+    <!--返回按钮-->
+    <div style="position: absolute;top: 5px;left: 15px;" onclick="javascript:window.history.go(-1);"><img src="imgs/back.png" class="back_arrow"/>
+    </div>
+
+
+</div>
+<div style="position: absolute;top: 50px;width: 100%;padding-left: 10px;padding-right: 10px;" >
+    <img src="imgs/logo_aboutus.png" width="100%" height="200px;"/>
+
+    <div style="margin-top: 20px;"><a href="#/setting_intro"> <img src="imgs/setting_intro.jpg"></a></div>
+    <div style="margin-top: 20px;" id="idService"><img src="imgs/setting_service.jpg"></div>
+    <div style="margin-top: 20px;"><a href="#/setting_manager"><img src="imgs/setting_manager.jpg"></a></div>
+    <div style="margin-top: 20px;"><a href="#/setting_guard"><img src="imgs/setting_guard.jpg"></a></div>
+</div>
+<script>
+    setTimeout(init,500);
+    function init(){
+        document.getElementById("idService").onclick = function(){
+            window.location.href="#/setting_service11";
+        };
+    }
+
+</script>
+

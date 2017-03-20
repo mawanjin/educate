@@ -1,0 +1,80 @@
+<div class="navbar navbar-app navbar-absolute-top edu_title">
+		<div class="navbar-brand navbar-brand-center" style="width:100%;text-align:center;" ng-click="selectgrade()">
+		  	{{country}}
+		  </div>
+		  <div style="position:absolute;height:100%;width:100%" >
+		  		<table height=100% width="100%" >
+		  			<tr>
+		  				<td style="color:white;padding-left: 20px;" align="left" ng-click="back()">
+							<img src="imgs/back.png" class="back_arrow" />
+						</td>
+		  				
+		  				<td width="50%" align="right" style="color:green;">
+							<div class="btn-group pull-right">
+							  <a ui-turn-on='myDropdown' class='btn' >
+						    	 <i  class="fa">
+									 <div id="grade" style="border: 1px solid #ffffff;height: 30px;width: 80px;line-height: 30px;color: #ffffff;">
+										 中小学
+									 </div>
+								 </i>
+							  </a>
+							  <ul class="dropdown-menu"
+								    ui-outer-click="Ui.turnOff('myDropdown')"
+								    ui-outer-click-if="Ui.active('myDropdown')"
+								    role="menu"
+								    ui-show="myDropdown" 
+								    ui-state="myDropdown"
+								    ui-turn-off="myDropdown"
+								    style="right:10px;">
+							    <li><a ng-click="selectgrade(0)">中小学</a></li>
+							    <li class="divider"></li>
+							    <li><a ng-click="selectgrade(1)">大学</a></li>
+							  </ul>
+							</div>			  					
+		  				</td>
+		  			</tr>
+		  		</table>
+		  </div>
+		  
+</div>
+
+<div class="scrollable" style="position: absolute;padding-top:50px;" >
+
+  <div class="scrollable-content" >
+    <div class="list-group">
+      <a ng-repeat="school in schools" href="#/detail/{{ school.id }}/{{ school.name }}" class="list-group-item" >
+		
+			<span grade={{school.grade}}>							
+				<table height=100%>
+					<tr>
+						<td width="80px" height="60px"><img src="{{ school.badge }}" width="120px" height="80px"/></td>
+						<td width="15px">&nbsp;</td>
+						<td>
+							<table border=0 height=100%>
+								<tr>
+									<!--学校名称-->
+									<td style="color: #333;">{{school.name }}</td>
+								</tr>
+								
+								<tr>									
+									<td height=5px></td>
+								</tr>
+								
+								<tr>
+									<td style="color: #999;">{{school.summary }}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</span>
+       
+
+      </a>
+    </div>
+  </div>
+
+
+</div>
+
+	

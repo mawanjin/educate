@@ -1,0 +1,61 @@
+<div class="navbar navbar-app navbar-absolute-top edu_title">
+    <div class="navbar-brand navbar-brand-center" style="width:100%;text-align:center;">
+        生活便利
+    </div>
+    <div style="position:absolute;height:100%;" ng-click="back()">
+        <table height=100%>
+            <tr>
+                <td style="color:white;padding-left: 15px;" align="left">
+					<img src="imgs/back.png" class="back_arrow" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<div style="position: absolute;top: 0px;width: 100%;"><img src="imgs/logo_convenience.jpg" width="100%" height="200px;"  /></div>
+
+<div class="scrollable" style="position: absolute;padding-top: 200px;">
+
+    <div class="scrollable-content">
+
+        <div class="list-group">
+            <a ng-repeat="convenience in conveniences" href="#/detail/{{ convenience.id }}" class="list-group-item">
+
+		<span>
+				<table >
+                    <tr>
+                        <!--<td width="60px" height="60px"> <img src="imgs/icon_convenience.png" width="60px" height="60px" /></td>-->
+                        <td width="60px" height="60px"> <img src="{{convenience.img }}" width="60px" height="60px" /></td>
+                        <td width="10px"></td>
+                        <td>
+                            <table border=0 >
+                                <tr>
+                                    <!--标题-->
+                                    <td style="color: #333;font-size: 14px;">{{convenience.title }}</td>
+                                </tr>
+
+
+                                <!--<tr>-->
+                                    <!--<td style="color: #999;">{{convenience.summary }}</td>-->
+                                <!--</tr>-->
+                                <tr>
+                                    <td height="100%" valign=bottom style="color: #999;">{{convenience.createDate | date:'yyyy-MM-dd
+                                        HH:mm:ss'}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+		</span>
+
+            </a>
+        </div>
+    </div>
+
+
+</div>
+
+	

@@ -1,0 +1,109 @@
+<div class="navbar navbar-app navbar-absolute-top edu_title">
+    <div class="navbar-brand navbar-brand-center" style="width:100%;text-align:center;">
+        主题活动
+    </div>
+    <div style="position:absolute;height:100%;" ng-click="back()">
+        <table height=100%>
+            <tr>
+                <td style="color:white;padding-left: 20px;">
+                    <img src="imgs/back.png" class="back_arrow"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div style="position: absolute;top: 0px;width: 100%;"><img src="imgs/logo_activity.png" width="100%" height="200px;"/>
+</div>
+
+
+<div id="wrapper">
+    <div id="scroller">
+        <ul ng-repeat="activity in activitys">
+            <li>
+                <a href="#/detail/{{ activity.id }}">
+                    <div style="height: 100px;width: 100%; border: 0px solid blue;">
+                        <table width="100%" height="100px" border="0">
+                            <tr>
+                                <td width="100px">
+                                    <img src="{{ activity.img }}" style="width: 100px;height: 80px;"/>
+                                </td>
+                                <td width="5px"></td>
+                                <td valign="middle">
+                                    <table border=0 width="100%" height="80px" style="margin-top: 10px;">
+                                        <tr>
+                                            <!--标题-->
+                                            <td style="color: #333;font-size: 14px;">{{activity.title }}</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height=5px></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="color: #999;">{{activity.summary }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td height="100%" valign=bottom style="color: #999;">{{activity.createDate |
+                                                date:'yyyy-MM-dd
+                                                HH:mm:ss'}}
+                                            </td>
+                                        </tr>
+                                    </table>
+                            </td>
+                            </tr>
+                            </table>
+                    </div>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
+
+
+<!--<div class="scrollable" style="position: absolute;padding-top: 200px;">-->
+
+<!--<div class="scrollable-content">-->
+
+
+<!--<div class="list-group">-->
+<!--<a ng-repeat="activity in activitys" href="#/detail/{{ activity.id }}" class="list-group-item">-->
+<!---->
+<!--<table height=100% width="100%" border="0">-->
+<!--<tr>-->
+<!--<td width="120px" height="80px" ><img src="{{ activity.img }}" style="width: 120px;height: 80px;" ></td>-->
+<!--<td width="15px">&nbsp;</td>-->
+<!--<td>-->
+<!--<table border=0 height=100% width="100%">-->
+<!--<tr>-->
+<!--&lt;!&ndash;标题&ndash;&gt;-->
+<!--<td style="color: #333;font-size: 17px;">{{activity.title }}</td>-->
+<!--</tr>-->
+
+<!--<tr>-->
+<!--<td height=5px></td>-->
+<!--</tr>-->
+
+<!--<tr>-->
+<!--<td style="color: #999;">{{activity.summary }}</td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td height="100%" valign=bottom style="color: #999;">{{activity.createDate | date:'yyyy-MM-dd-->
+<!--HH:mm:ss'}}-->
+<!--</td>-->
+<!--</tr>-->
+<!--</table>-->
+<!--</td>-->
+<!--</tr>-->
+<!--</table>-->
+
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<!--</div>-->
+
+	

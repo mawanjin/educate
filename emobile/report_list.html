@@ -1,0 +1,58 @@
+
+<div class="navbar navbar-app navbar-absolute-top edu_title">
+    <div class="navbar-brand navbar-brand-center" style="width:100%;text-align:center;">
+        报告列表
+    </div>
+    <div style="position:absolute;height:100%;" onclick="javascript:window.history.go(-1);" >
+        <table height=100%>
+            <tr>
+                <td style="color:white;padding-left: 20px;" >
+                    <img src="imgs/back.png" class="back_arrow" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="scrollable">
+
+    <div class="scrollable-content">
+        <div><img src="imgs/logo_report_list.jpg" width="100%"  /></div>
+
+        <div class="list-group">
+            <a ng-repeat="report in reports" href="#/detail/{{ report.id }}" class="list-group-item">
+
+				<table >
+                    <tr>
+                        <td width="50px" height="50px">
+                            <span ng-if="type==0"><img src="imgs/report_list_icon_week.png" width="50px" height="50px"/></span>
+                            <span ng-if="type==1"><img src="imgs/report_list_icon_month.png" width="50px" height="50px"/></span>
+                            <span ng-if="type==2"><img src="imgs/report_list_icon_semester.png" width="50px" height="50px"/></span>
+                            <span ng-if="type==3"><img src="imgs/report_list_icon_year.png" width="50px" height="50px"/></span>
+                        </td>
+
+                        <td width="15px">&nbsp;</td>
+                        <td>
+                            <table border=0 height=100%>
+                                <tr>
+                                    <!--标题-->
+                                    <td style="color: #333;font-size: 17px;">{{report.title }}</td>
+                                </tr>
+
+                                <tr>
+                                    <td height="100%" valign=bottom style="color: #999;">{{report.createDate | date:'yyyy-MM-dd
+                                        HH:mm:ss'}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+            </a>
+        </div>
+    </div>
+
+
+</div>
+
+<img id="img" src="" style="display: none;" />

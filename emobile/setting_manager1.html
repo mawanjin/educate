@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <!--<base href="/"/>-->
+    <title>Mobile Angular UI Demo12</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes"/>
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="css/mobile-angular-ui-hover.min.css"/>
+    <link rel="stylesheet" href="css/mobile-angular-ui-base.min.css"/>
+    <link rel="stylesheet" href="css/mobile-angular-ui-desktop.min.css"/>
+
+    <link rel="stylesheet" href="css/carousel/owl.carousel.css"/>
+    <link rel="stylesheet" href="css/carousel/owl.theme.css"/>
+    <link rel="stylesheet" href="css/demo.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio: 2.0)" href="css/xdpi.css"/>
+    <link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio: 1.5)" href="css/hdpi.css"/>
+    <link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio: 1.0)" href="css/mdpi.css"/>
+    <link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio: 0.75)" href="css/ldpi.css"/>
+
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/mobile-angular-ui.min.js"></script>
+    <!-- Required to use $swipe, $drag and Translate services -->
+    <script src="js/mobile-angular-ui.gestures.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/ctrl/setting_ctrl.js"></script>
+
+</head>
+
+<body ng-app="emobile" ng-controller="settingController">
+
+<div class="app" style="background-color:white;">
+    <!--标题-->
+    <div class="edu_title">
+        成绩管理
+    </div>
+
+
+    <div class="scrollable" style="position: absolute;padding-top: 45px;padding-left: 10px;padding-right: 10px;">
+
+        <div class="scrollable-content">
+
+            <div class="list-group">
+                <img src="imgs/setting_manager_top.jpg" style="margin-bottom: 10px;"/>
+
+                留学管理：成绩（GPA)管理
+                <br>
+
+                美国：GPA管理系统即学习成绩管理系统
+                <br>
+                <hr/>
+                &nbsp;&nbsp;学习成绩管理系统是对学生高中阶段的学习成绩全过程监控，阶段评估，总结，分析，辅助，指导，并在此基础上制定合理的大学申请计划，帮助学生完成高中学习，顺利地迈入心仪的大学校门。
+                <br>
+
+                &nbsp;&nbsp;在课外，学生按照5--6个人一个班级，配备一名专职的班主任（课程老师），每天监督学生的学习，作业，监控学生的日常表现和学习成绩变化，考试成绩的优劣，课程补习计划的实施，课外活动的安排等。
+                <br>
+                具体内容：
+                <br>
+
+                &nbsp;&nbsp;九年级GPA管理内容补充管理内容
+                开学初对学生进行全面评估。
+                指导学生选课，最大限度地满足学生求学的愿望
+                个性制定学生9年级，中学阶段的学习规划
+                <br>
+                <img src="imgs/setting_manager_img2.jpg">
+                ESL强化课程
+                课外活动安排
+                <br>
+
+                &nbsp;&nbsp;每天	课程老师与学生视频连线，检查，辅导学生课后作业
+                上课时间安排在每周一至周五晚上，平均一小时左右
+
+                每周	根据本周的课外作业，以及与老师视频的沟通，老师将对学生本周的上课效果做出初步评价，供学生参考。
+
+                专业教授老师团队每两周面授辅导学生，对学生的学习情况进行必要的指导和督促。
+
+                每月	根据学生本月的考试成绩，学校老师的反馈意见，以及课外老师的建议，做出学生学习的“月度报告”。对学习中的问题提出建议，或者提出解决方法供学生和家长参考。
+
+                每学期	对学生本学期的学习情况进行总结，分析原因。对取得进步的学科以及退步的学科进行分析，提出促进和改进的方法。对下学期的学习提出建议，在此基础上做出“学期报告”。
+
+                每学年	对本学年的学习情况充分了解，与学校老师一起分析，听取学校和课外辅导老师的意见，总结学习成绩和学习表现，提出学习的建议，并与学生和家长一起协商学生的教育方法。
+
+                <br>
+                ESL(英语课程辅导：
+
+                &nbsp;&nbsp;对于英语水平不太理想的学生，例外提供英语课程的辅导。
+                英语课程主要针对美国高中阶段学习中所用到的学术英语知识。
+                辅导方式：每天1小时，每周5天，视频教学。
+
+
+                <br>
+
+
+                &nbsp;&nbsp;十年级	                GPA管理内容	补充管理内容
+                每天	课程老师与学生视频连线，检查，辅导学生课后作业
+                上课时间安排在每周一至周五晚上，平均一小时左右
+
+                <br>
+
+
+                &nbsp;&nbsp;ESL强化课程
+                学术竞赛培训
+                课外活动安排
+                <br>
+                &nbsp;&nbsp; 每周	根据本周的课外作业，以及与老师视频的沟通，老师将对学生本周的上课效果做出初步评价，供学生参考。
+                <br>
+                &nbsp;&nbsp;专业教授老师团队每两周面授辅导学生，对学生的学习情况进行必要的指导和督促。
+                <br>
+                &nbsp;&nbsp;每月根据学生本月的考试成绩，学校老师的反馈意见，以及课外老师的建议，做出学生学习的“月度报告”。对学习中的问题提出建议，或者提出解决方法供学生和家长参考。
+                <br>
+                &nbsp;&nbsp;每学期
+                对学生本学期的学习情况进行总结，分析原因。对取得进步的学科以及退步的学科进行分析，提出促进和改进的方法。对下学期的学习提出建议，在此基础上做出“学期报告”。
+                <br>
+                &nbsp;&nbsp;每学年
+                对本学年的学习情况充分了解，与学校老师一起分析，听取学校和课外辅导老师的意见，总结学习成绩和学习表现，提出学习的建议，并与学生和家长一起协商学生的教育方法。
+                <br>
+
+
+                学术竞赛培训：
+                &nbsp;&nbsp;对于计划申请顶尖美国大学的学生来说，需要参加所在州，或者全国范围的学术竞赛：数学，科学等科目。适当的培训，对竞赛结果和大学申请都有好处。
+                上课方式：每周固定时间，视频授课。并有面授时间安排。
+                课外活动安排:
+                美国大学申请时，需要提供中学时的活动报告，这些课外活动需要与申请大学有关。我们将根据学生的兴趣，设计社团和活动，培养学生领导力。
+                <br>
+                <img src="imgs/setting_manager_img3.jpg">
+
+
+
+
+
+                &nbsp;&nbsp; 十一年级	                GPA管理内容	补充管理内容
+                每天	课程老师与学生视频连线，检查，辅导学生课后作业
+                上课时间安排在每周一至周五晚上，平均一小时左右
+
+                <br>
+
+                &nbsp;&nbsp;SAT/ACT强化课程
+                学术竞赛培训
+                课外活动安排
+                大学申请准备
+                <br>
+                &nbsp;&nbsp;每周	根据本周的课外作业，以及与老师视频的沟通，老师将对学生本周的上课效果做出初步评价，供学生参考。
+                <br>
+                &nbsp;&nbsp; 专业教授老师团队每两周面授辅导学生，对学生的学习情况进行必要的指导和督促。
+                每月	根据学生本月的考试成绩，学校老师的反馈意见，以及课外老师的建议，做出学生学习的“月度报告”。对学习中的问题提出建议，或者提出解决方法供学生和家长参考。
+                <br>
+                &nbsp;&nbsp;每学期	对学生本学期的学习情况进行总结，分析原因。对取得进步的学科以及退步的学科进行分析，提出促进和改进的方法。对下学期的学习提出建议，在此基础上做出“学期报告”。
+                <br>
+                &nbsp;&nbsp; 每学年	对本学年的学习情况充分了解，与学校老师一起分析，听取学校和课外辅导老师的意见，总结学习成绩和学习表现，提出学习的建议，并与学生和家长一起协商学生的教育方法，制定大学申请计划。
+                <br>
+
+                SAT/ACT强化课程
+                &nbsp;&nbsp; SAT，ACT是美国大学入学考试课程，美国知名大学在审核学生入学条件时，都参考这些课程的成绩。但是，美国中学并不专门开设这些课程，所以，对于计划申请美国知名大学的中学生来说，适当地强化SAT.ACT课程的学习是有必要的。
+                上课方式：每周固定时间，视频授课。并有面授时间安排。
+                大学申请准备：申请美国大学是一门很专业的学问，需要很早开始规划，并就大学申请的条件安排中学阶段的学习和活动。大学申请工作主要从学生的志向出发，结合学生的特点，个性化地制定和安排课程和活动。
+
+                <br>
+
+                &nbsp;&nbsp; 十二年级	                GPA管理内容	补充管理内容
+                每天	课程老师与学生视频连线，检查，辅导学生课后作业
+                上课时间安排在每周一至周五晚上，平均一小时左右
+
+                <br>
+                <img src="imgs/setting_manager_img1.jpg">
+                &nbsp;&nbsp;SAT/ACT强化课程
+                学术竞赛培训
+                课外活动安排
+                顶尖大学申请
+                <br>
+                &nbsp;&nbsp; 每周	根据本周的课外作业，以及与老师视频的沟通，老师将对学生本周的上课效果做出初步评价，供学生参考。
+                专业教授老师团队每两周面授辅导学生，对学生的学习情况进行必要的指导和督促。
+                每月	根据学生本月的考试成绩，学校老师的反馈意见，以及课外老师的建议，做出学生学习的“月度报告”。对学习中的问题提出建议，或者提出解决方法供学生和家长参考。
+                <br>
+                &nbsp;&nbsp;每学期	对学生本学期的学习情况进行总结，分析原因。对取得进步的学科以及退步的学科进行分析，提出促进和改进的方法。对下学期的学习提出建议，在此基础上做出“学期报告”。帮助学生完成大学申请的初步准备。
+                <br>
+                &nbsp;&nbsp;每学年	根据学生的成绩，帮助学生做好大学申请准备工作。提供大学申请方案，并对学生申请资料做必要的指导。
+
+                <br>
+
+                &nbsp;&nbsp;顶尖大学申请
+                顶尖大学申请时一项非常专业的工作。我们拥有30多年大学申请经验的老师为学生设计学校申请方案。
+
+            </div>
+        </div>
+
+
+    </div>
+    <!--返回按钮-->
+    <div style="position: absolute;top: 10px;left: 10px;" onclick="javascript:window.history.go(-1);"><img src="imgs/back.png" class="back_arrow"/>
+    </div>
+</div>
+
+
+</body>
+</html>

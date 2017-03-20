@@ -1,0 +1,33 @@
+<div class="navbar navbar-app navbar-absolute-top edu_title">
+    <div class="navbar-brand navbar-brand-center" style="width:100%;text-align:center;">
+        详情
+    </div>
+    <div style="position:absolute;" ng-click="back()">
+        <table >
+            <tr>
+                <td style="color:white;padding-left: 15px;" align="left">
+                    <img src="imgs/back.png" class="back_arrow"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!--内容-->
+<div class="scrollable" style="padding-top: 50px;padding-left: 10px;padding-right: 10px;">
+
+    <div class="scrollable-content">
+        <!--标题-->
+        <div style="font-size:18px;">{{convenience.title}}</div>
+        <!--时间-->
+        <div style="color:gray;padding-bottom: 10px;">{{convenience.createDate | date:'yyyy-MM-dd HH:mm:ss'}}</div>
+        <!--内容-->
+        <article ng-bind-html="convenience.content | trustHtml"></article>
+    </div>
+</div>
+
+
+	
+	
+
+ 
